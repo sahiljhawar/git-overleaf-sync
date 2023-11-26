@@ -116,7 +116,7 @@ while True:
     if old_hash != new_hash:
         print(
             f"\n{Fore.RED}***********Changes found on Overleaf... Merging them to the"
-            " Github***********"
+            " Github repository***********"
         )
 
         checkout_to_local(args.local)
@@ -128,6 +128,6 @@ while True:
         print(Style.RESET_ALL)
 
     else:
-        print(f"{Fore.GREEN}No changes found, skipping...{Style.RESET_ALL}\n")
+        print(f"{Fore.GREEN}No changes found...{Style.RESET_ALL}\n")
 
     time.sleep(args.refresh)
