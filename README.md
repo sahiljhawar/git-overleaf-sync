@@ -43,7 +43,7 @@ That's all for the manual git setup.
 ```bash
 git clone git@github.com:sahiljhawar/git-overleaf-sync.git
 ```
-and install `colorama` for colored terminal output
+and install `colorama` for colored terminal output:
 `pip install colorama`
 
 ### 2. Usage 
