@@ -56,7 +56,10 @@ python3 main.py --path <Overleaf_project_directory [fullpath]> --local <local_br
 ```
 Use `<Overleaf_project_directory>` and `<local_branch_name>` as used during the intial setup
  
-Code should be self explanatory.
+Code should be self explanatory. However, here's a short overview: 
+
+> After the initial setup, the script calculates the MD5 hash at current state and then pulls from the Overleaf, and then calculates the hash again, if the previous hash and new hash are different, a merge takes place from Overleaf branch to Github branch and changes are pushed to Github. There are no commits made to the Overleaf and no pulls made from the Github. Your local system merely works as a (toned down) proxy and syncs the two repositories. There are obvious optimisations which can be made such as use of `gitpython`, error handling, logging, etc.
+
 
 > [!TIP]
 > In principle this should work with Gitlab, Bitbucket and other Git based repository hosting services.
