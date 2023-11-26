@@ -48,8 +48,8 @@ and install `colorama` for colored terminal output
 
 ### 2. Usage 
 
->[!WARNING]
->Only works with `python3`
+> [!WARNING]
+> Only works with `python3`
 
 ```bash
 python3 main.py --path <Overleaf_project_directory [fullpath]> --local <local_branch_name> --refresh <refresh time in seconds>
@@ -57,3 +57,6 @@ python3 main.py --path <Overleaf_project_directory [fullpath]> --local <local_br
 Use `<Overleaf_project_directory>` and `<local_branch_name>` as used during the intial setup
  
 Code should be self explanatory.
+
+> [!TIP]
+> In principle this should work with Gitlab, Bitbucket and other Git based repository hosting services.
